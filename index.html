@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+    <title>BMI Calculator</title>
+</head>
+<body class="flex justify-center items-center bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500">
+    <div id="Container" class=" bg-white text-center w-96 h-auto rounded-lg">
+        <p id="Heading" class="text-3xl font-extrabold mt-4 text-gray-800">BMI Calculator</p>
+        <div id="weightbox" class="mt-10">
+            <label for="weight">Weight (kg):</label>
+            <input type="number" name="weight" id="weight" class="ml-5 w-56  border-b-2  focus:outline-none">
+        </div>
+        <div id="heightbox" class="mt-10">
+            <label for="height">Height (cm):</label>
+            <input type="number" name="height" id="height" class="ml-5 w-56  border-b-2  focus:outline-none">
+        </div>
+        <div id="result" class="mt-10">
+            <p id="BMI" class="font-mono font-bold text-green-700 text-lg"></p>
+            <p id="BMICATEGORY" class="font-semibold"></p>
+        </div>
+        <div id="buttons" class="mt-10">
+            <button id="calculatebtn" class="bg-gradient-to-r from-orange-300 to-rose-300 py-2 px-3 rounded-md mr-3">Calculate BMI</button>
+            <button id="resetbtn" class="bg-slate-300 py-2 px-3 rounded-md">Reset</button>
+        </div>
+        <div id="bmiscale" class="flex items-center  mx-3 mt-10">
+            <hr class="h-1 w-1/4 bg-yellow-400">
+            <hr class="h-1 w-1/4 bg-green-400">
+            <hr class="h-1 w-1/4 bg-orange-400">
+            <hr class="h-1 w-1/4 bg-red-400">
+        </div>
+        <div id="bmilabels" class="flex justify-around mt-3 text-sm">
+            <p>Underweight</p>
+            <p>Normal</p>
+            <p>Overweight</p>
+            <p>Obese</p>
+        </div>
+        <div id="bmivalues" class="flex mt-3 mb-5 mx-5 text-sm">
+            <p class="ml-3"><b>&lt;18.5</b></p>
+            <p class="ml-14 sm:ml-12"><b>18.5 - 24.9</b></p>
+            <p class="ml-8"><b>25 - 29.9</b></p>
+            <p class="ml-14"><b>30+</b></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
